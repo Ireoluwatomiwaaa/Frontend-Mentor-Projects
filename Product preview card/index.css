@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Fraunces', serif; */
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    width: fit-content;
+    padding: 200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 240px;
+    height: 360px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+#card {
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.header {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin: 20px;
+}
+
+.description {
+    color: hsl(228, 12%, 48%);  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; 
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.price .main-price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+}
+
+.price .old-price {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+svg {
+    margin-right: 10px;
+    line-height: 1;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    line-height: 2rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    gap: 20px;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+button:active {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 375px) {
+    #card {
+        display: grid;
+    }
+    img {
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0px;
+        height: 240px;
+        width: 343px;
+        object-fit: cover;
+    }
+    .price {
+        gap: 35px;
+    }
+
+
+}

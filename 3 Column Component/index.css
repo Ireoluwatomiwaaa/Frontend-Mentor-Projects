@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* 
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif; 
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+svg {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 250px;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 75px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 40px 40px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 40px 40px;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 40px 40px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: 0px;
+    padding: 1rem 2rem;
+    line-height: 0.3; 
+    cursor: pointer;
+    border-radius: 100vw;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button:hover {
+    border: 2px solid white;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        flex-direction: column;
+    } 
+    button {
+        width: 60%;
+    }
+}
+    
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
